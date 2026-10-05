@@ -1,0 +1,18 @@
+{
+  "name": "pulso-comercial",
+  "version": "0.1.0",
+  "description": "Pulso Comercial: seguimiento de actividad comercial por vendedor frente a una meta semanal.",
+  "private": true,
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "seed:demo": "node --disable-warning=ExperimentalWarning scripts/seed-demo.js",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 \"test/*.test.js\""
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
